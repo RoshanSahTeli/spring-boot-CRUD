@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<form th:action="@{/search}" method="get">
+		
+		<table>
+			<tr>
+				<td>
+					<input type="number" name="search" placeholder="Search by id.."/>
+				</td>
+				<td>
+					<input type="submit" value="search"/>
+				</td>
+			</tr>
+		</table>
+		
+	</form>
+	
+<form th:action="@{/save}" method="post">
+	
+	<table>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" name="name"/></td>
+		</tr>
+		<tr><td>Address</td>
+		<td><input type="text" name="address"/></td>
+		
+		</tr>
+		<tr>
+			<td><input type="submit" value="submit"/></td>
+		</tr>
+		
+	</table>
+	<a th:href="@{/list}">List</a>
+	
+</form>
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Update Form</title>
+		
+	</head>
+	<body>
+		<form th:object="${list}" th:action="@{/update_save}" method="post">
+			
+			<table>
+				<tr>
+					<td>ID</td>
+					<td>
+						<input type="number" name="id" th:field="*{id}"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" name="name" th:field="*{name}"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>
+						<input type="text" name="address" th:field="*{address}"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="update"/>
+					</td>
+				</tr>
+			</table>
+			
+			
+		</form>
+	</body>
+</html>

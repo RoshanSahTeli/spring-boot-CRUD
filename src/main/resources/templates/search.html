@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Search Result</title>
+	</head>
+	<body>
+		
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Address</td>
+			</tr>
+			<tr th:each="e:${search}">
+				<td th:text="${e.id}"></td>
+				<td th:text="${e.name}"></td>
+				<td th:text="${e.address}"></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
